@@ -5,7 +5,7 @@ import numpy as np
 import joblib
 
 app = Flask(__name__)
-model = joblib.load('model/flight_fare.pkl')
+model = joblib.load('model.pkl')
 
 @app.route('/',methods=['GET'])
 def Home():
